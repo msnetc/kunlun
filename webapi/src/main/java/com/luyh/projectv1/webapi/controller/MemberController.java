@@ -19,7 +19,8 @@ public class MemberController {
 
     @RequestMapping("/member/{memberId}")
     Member findMemberByMemberId(@PathVariable("memberId") Integer memberId) throws Exception{
-       return memberService.findMemberByMemberId(memberId);
+       Member ret =  memberService.findMemberByMemberId(memberId);
+       return ret;
     }
 
 
